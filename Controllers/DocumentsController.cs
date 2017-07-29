@@ -12,7 +12,7 @@ namespace testdocsapi.Controllers
     public class DocumentsController : Controller
     {
                        
-        // [Authorize]
+        [Authorize]
         [HttpGet]
         public IActionResult Get()
         {               
