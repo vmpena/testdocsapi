@@ -1,0 +1,8 @@
+/Users/comppenv/Dropbox/DotNetCore/testdocsapi/bin/Debug/netcoreapp1.1/testdocsapi.deps.json
+/Users/comppenv/Dropbox/DotNetCore/testdocsapi/bin/Debug/netcoreapp1.1/testdocsapi.runtimeconfig.json
+/Users/comppenv/Dropbox/DotNetCore/testdocsapi/bin/Debug/netcoreapp1.1/testdocsapi.runtimeconfig.dev.json
+/Users/comppenv/Dropbox/DotNetCore/testdocsapi/bin/Debug/netcoreapp1.1/testdocsapi.dll
+/Users/comppenv/Dropbox/DotNetCore/testdocsapi/bin/Debug/netcoreapp1.1/testdocsapi.pdb
+/Users/comppenv/Dropbox/DotNetCore/testdocsapi/obj/Debug/netcoreapp1.1/testdocsapi.AssemblyInfo.cs
+/Users/comppenv/Dropbox/DotNetCore/testdocsapi/obj/Debug/netcoreapp1.1/testdocsapi.dll
+/Users/comppenv/Dropbox/DotNetCore/testdocsapi/obj/Debug/netcoreapp1.1/testdocsapi.pdb
