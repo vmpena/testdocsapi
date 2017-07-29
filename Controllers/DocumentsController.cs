@@ -12,7 +12,7 @@ namespace testdocsapi.Controllers
     public class DocumentsController : Controller
     {
                        
-        // [Authorize("read:documents")]
+        [Authorize]
         [HttpGet]
         public IActionResult Get()
         {               
@@ -31,7 +31,6 @@ namespace testdocsapi.Controllers
     {
         public static List<Document> GetDocuments()
         {
-            // Initialize list with collection initializer.
             List<Document> docs = new List<Document>(){
                 new Document(){ id = 9496, institution = "Richter & Jeter Ltd"},
                 new Document(){ id = 6391, institution = "Gilmour and Waters"},

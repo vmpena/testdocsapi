@@ -27,12 +27,34 @@ namespace testdocsapi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            // To implement CORS, uncomment code below
+            // https://docs.asp.net/en/latest/security/cors.html#enabling-cors-with-middleware
+            // services.AddCors(options =>
+            // {
+            //     string[] sites = new string[]{ 
+            //         "http://clientapp1.com", 
+            //         "http://www.clientapp.com", 
+            //         "http://localhost:4200"
+            //         };
+                
+            //     options.AddPolicy("AllowSpecificOrigin",
+            //             builder => builder.WithOrigins(sites));
+            // });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+
+            var options = new JwtBearerOptions
+            {
+                Audience = "http://testdocs.azurewebsites.net/",
+                Authority = "https://testdocs.auth0.com/"
+            };
+
+            app.UseJwtBearerAuthentication(options);
 
             app.UseMvc();
         }
