@@ -26,7 +26,7 @@ namespace testdocsapi
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddCors();
 
             // To implement CORS, uncomment code below
             // https://docs.asp.net/en/latest/security/cors.html#enabling-cors-with-middleware
@@ -41,6 +41,8 @@ namespace testdocsapi
             //     options.AddPolicy("AllowSpecificOrigin",
             //             builder => builder.WithOrigins(sites));
             // });
+
+            services.AddMvc();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
