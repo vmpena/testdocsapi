@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 namespace testdocsapi.Controllers
 {
     // uncomment EnableCors to restrict access 
-    // [EnableCors("AllowSpecificOrigin")]
+    [EnableCors("AllowSpecificOrigin")]
     [Route("api/[controller]")]
     public class DocumentsController : Controller
     {

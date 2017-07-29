@@ -30,17 +30,17 @@ namespace testdocsapi
 
             // To implement CORS, uncomment code below
             // https://docs.asp.net/en/latest/security/cors.html#enabling-cors-with-middleware
-            // services.AddCors(options =>
-            // {
-            //     string[] sites = new string[]{ 
-            //         "http://clientapp1.com", 
-            //         "http://www.clientapp.com", 
-            //         "http://localhost:4200"
-            //         };
+            services.AddCors(options =>
+            {
+                string[] sites = new string[]{ 
+                    "http://clientapp1.com", 
+                    "http://www.clientapp.com", 
+                    "http://localhost:4200"
+                    };
                 
-            //     options.AddPolicy("AllowSpecificOrigin",
-            //             builder => builder.WithOrigins(sites));
-            // });
+                options.AddPolicy("AllowSpecificOrigin",
+                        builder => builder.WithOrigins(sites));
+            });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
