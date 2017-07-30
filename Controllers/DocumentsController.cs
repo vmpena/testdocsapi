@@ -36,7 +36,7 @@ namespace testdocsapi.Controllers
                 new Document(){ id = 2487, institution = "Wynwood Ventures"},
                 new Document(){ id = 427, institution = "56 Hope Road Productions"},
                 new Document(){ id = 892, institution = "The Cobb Group"},
-                new Document(){ id = 6771, institution = "Indus, Dal & Anchar"}    
+                new Document(){ id = 6770, institution = "Shankar and Harrison"}    
             };
 
             return docs;
